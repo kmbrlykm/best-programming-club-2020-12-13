@@ -79,15 +79,20 @@
           // Define list item as the product name
           listItemElement.innerText = itemData.product;
 
+          // Add this new product to the unordered fruit list in HTML
+          // this fruit list was initiated just outside of this loop
           fruitListElement.appendChild(listItemElement);
 
+          // Create a button for this new fruit
           const buttonElement = document.createElement('button');
 
+          // Add details to the new fruit button
           buttonElement.classList.add('add-to-cart');
           buttonElement.dataset.product = itemData.product;
           buttonElement.dataset.price = itemData.price;
           buttonElement.innerText = 'Add +1 to cart';
 
+          // Add the button to the unordered fruit list in HTML
           listItemElement.appendChild(buttonElement);
         });
 
