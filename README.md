@@ -1,5 +1,15 @@
 # best-programming-club-2020-12-13
 
+## Kim's method
+
+Add an empty section for available vegetables to be added to programatically. Every vegetable is inside a list, titled Vegetable, inside availableProductsData, an object. Inside initializeProducts(), locate the empty section for vegetables. Run a forEach loop on the vegetables list, then create a new list item with its details of each vegetable, and append the list item to the empty section. Repeat with buttons.
+
+### Challenges and Questions
+
+1. itemData vs. item: I see Sua used itemData when running forEach on the fruit list, but I used item on vegie list. Everything seems to work. But I'm still googling the difference. Is it interchangeable?
+
+2. When we're appending buttons to the unordered list, it seems to magically appear next to the vegetable. I thought it would appear under, because it looks like these button items are being added as a new list item. 
+
 ## Assignment
 
 Add a new section for vegetables under "Products" so that users can buy vegetables.
