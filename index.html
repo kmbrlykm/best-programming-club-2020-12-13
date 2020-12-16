@@ -17,11 +17,11 @@
           <h3>Available fruit</h3>
           <ul id="available-fruit-list"></ul>
         </section>
-      </section>
 
-      <section class="product-sub-section">
-        <h3>Available vegetables</h3>
-        <ul id="available-veg-list"></ul>
+        <section class="product-sub-section">
+          <h3>Available vegetables</h3>
+          <ul id="available-veg-list"></ul>
+        </section>  
       </section>
 
       <section>
@@ -35,7 +35,8 @@
     <script>
       // availableProductsData is an object, and there are two keys, which are fruit and vegetables
       // Each key is a list, and it's a list of objects. Each object is one product.
-      
+      // object > key > list > object
+
       const availableProductsData = {
         fruit: [
           {
@@ -67,10 +68,15 @@
         const fruitListElement = document.getElementById(
           'available-fruit-list'
         );
-
+        
+        // object.key.FN for each (itemData) for each item of this list called FRUIT?
+        // This goes through every item inside the "fruit" list
+        // what's the difference betwene itemData and item?
         availableProductsData.fruit.forEach((itemData) => {
+          // Create an empty list item
           const listItemElement = document.createElement('li');
 
+          // Define list item as the product name
           listItemElement.innerText = itemData.product;
 
           fruitListElement.appendChild(listItemElement);
@@ -84,6 +90,13 @@
 
           listItemElement.appendChild(buttonElement);
         });
+
+        const vegListElement = document.getElementById(
+          'available-veg-list'
+        );
+
+
+
       }
 
       function initializeCart() {
