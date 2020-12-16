@@ -106,6 +106,15 @@
           listItemElement.innerText = item.product;
 
           vegListElement.appendChild(listItemElement);
+
+          const buttonElement = document.createElement('button');
+
+          buttonElement.classList.add('add-to-cart');
+          buttonElement.dataset.product = item.product;
+          buttonElement.dataset.price = item.price;
+          buttonElement.innerText = 'Add +1 to cart';
+          
+          listItemElement.appendChild(buttonElement);
         });
 
 
