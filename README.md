@@ -6,9 +6,11 @@ Add an empty section for available vegetables to be added to programatically. Ev
 
 ### Challenges and Questions
 
-1. itemData vs. item: I see Sua used itemData when running forEach on the fruit list, but I used item on vegie list. Everything seems to work. But I'm still googling the difference. Is it interchangeable?
+1. I think the most challenging part was figuring out the structure of lists where fruits and vegetables live. So a fruit is an object, which is inside a fruit list, inside a bigger object. So fruits and veggies can be seprated but still be kinda together.
 
-2. ~~When we're appending buttons to the unordered list, it seems to magically appear next to the vegetable. I thought it would appear under, because it looks like these button items are being added as a new list item.~~ I see the button is NOT being added as a new list item, instead we append the button to the list item that was already created with product name. 
+2. itemData vs. item: I see Sua used itemData when running forEach on the fruit list, but I used item on vegie list. Everything seems to work. But I'm still googling the difference. Is it interchangeable?
+
+3. ~~When we're appending buttons to the unordered list, it seems to magically appear next to the vegetable. I thought it would appear under, because it looks like these button items are being added as a new list item.~~ I see the button is NOT being added as a new list item, instead we append the button to the list item that was already created with product name. 
 
 
 ## Assignment
