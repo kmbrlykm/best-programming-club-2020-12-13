@@ -2,7 +2,7 @@
 
 ## Kim's method
 
-Add an empty section for available vegetables to be added to programatically. Every vegetable is inside a list, titled Vegetable, inside availableProductsData, an object. Inside initializeProducts(), locate the empty section for vegetables. Run a forEach loop on the vegetables list, then create a new list item with its details of each vegetable, and append the list item to the empty section. We initiate buttons with datas about the vegetables, and add to the list item like previously.
+Add an empty section for available vegetables to be added to programatically. Every vegetable is an object, which lives inside a list, titled Vegetable. And the list lives inside availableProductsData, an object. Inside initializeProducts(), locate the empty section for vegetables. Run a forEach loop on the vegetables list, then create a new list item with the vegetable's name. Append the list item to the vegetables section. We then make a new button with the vegetable's details, and append it to the list item. 
 
 ### Challenges and Questions
 
